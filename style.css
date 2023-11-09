@@ -1,0 +1,61 @@
+body {
+    font-family: arial;
+    background-color:darkkhaki;
+}
+/* Nav > a controles left to right a ( child elements ) of Nav*/
+/* flex function is very convinient */
+nav > a {
+    text-decoration: none;
+    border: 0.5px solid gray;
+    flex:3;
+    text-align: center;
+    padding: 0.4rem;
+    margin-inline: 0.2cm;
+    color: white;
+    transition: all 1s;
+}
+/* Nav > a controles specifcially first child
+border-radius affects the style of the border nav panel
+to style corners it goes in order top L top R Bottom R Bottom L 0 0 0 0*/
+
+
+nav > a {
+    border-radius: 1rem 1rem 1rem 1rem;   
+}
+
+nav {
+    display: flex;
+
+}
+
+nav > a.selected {
+    background-color: darkgreen;
+} 
+/* Hover function changes the look of the section ones mouse goes over it*/
+nav > a:hover{
+    background-color: saddlebrown;
+    color: white;
+    transition: all 1s;
+}
+/* @media controles the elements for different sizeing of the websites as it
+changes sizes but it will requre some rezising and fixing*/
+@media (max-width:300px){
+    nav {
+    flex-direction: column;
+}
+nav > a:first-child {
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+nav > a:last-child {
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+}    
+footer > p  {
+    text-align: center;
+    padding: 3px;
+    background-color: salmon;
+    color: white;
+    flex: 1;
+}
+
+
