@@ -11,6 +11,7 @@ nav > a {
     text-align: center;
     padding: 0.4rem;
     margin-inline: 0.2cm;
+    margin-left: 2cm;
     color: white;
     transition: all 1s;
 }
@@ -39,8 +40,11 @@ nav > a:hover{
 }
 /* @media controles the elements for different sizeing of the websites as it
 changes sizes but it will requre some rezising and fixing*/
-@media (max-width:300px){
-    nav {
+
+
+@media (max-width:300px)
+
+nav {
     flex-direction: column;
 }
 nav > a:first-child {
@@ -49,33 +53,65 @@ nav > a:first-child {
 nav > a:last-child {
     border-radius: 1rem 1rem 1rem 1rem;
 }
-}    
-footer   {
-    text-align: center;
-    font-size: smaller;
-    position: fixed;
-    bottom: 2%;
+
+/* End of Nav bar  all HTML */
+
+/* start of index.html main page*/
+
+
+
+.imgflex {
     width: 100%;
-    padding: 2px;
-    background-color: darkgreen;
-    color: white;
+    max-width: 500px;
+    min-width: 300px;
+    margin-left: 4cm;
+    margin-right:50%;
+    border: 4px solid saddlebrown;   
 }
 
-
-/* Portfolio styling */
-.portfolioheader {
+.welcomemsg {
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+.mainheader {
     text-decoration: none;
     border: 0.5px solid gray;
     flex:3;
     text-align: center;
     padding: 0.4rem;
-    margin-inline: 0.2cm;
+    width: auto;
     background-color: darkgreen;
     color: white;
     transition: all 1s;
-    border-radius: 2rem 2rem 2rem 2rem;
+    
 }
 
+/* Start of Footer all HTML */
+
+footer   {
+    text-align: center;
+    font-size: smaller;
+    position: absolute;
+    flex: content;
+    bottom: 0;
+    width: 100%;
+    padding: 1px;
+    background-color: darkgreen;
+    color: white;
+}
+/* End of Footer all HTML*/
+
+/* About styling*/
+.imgabout {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .text-container {
+    margin-left: 20px;
+  }
+
+/* Portfolio styling */
 div.gallery {
     border: 4px solid black;
 }

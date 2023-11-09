@@ -1,3 +1,1 @@
-let YMCA = "Hello World"
-
-console.log (YMCA)
+console.log ("Hello World")
