@@ -8,8 +8,9 @@ nav > a {
     text-decoration: none;
     border: 0.5px solid gray;
     flex:3;
-    gap: space-evenly;
+    gap: space-between;
     text-align: center;
+    justify-content: center;
     padding: 0.4rem;
     margin-inline: 0.4cm;
     color: white;
@@ -27,7 +28,7 @@ nav > a {
 nav {
     display: flex;
     background-color: darkgreen;
-
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 nav > a.selected {
@@ -45,8 +46,10 @@ changes sizes but it will requre some rezising and fixing*/
 
 @media (max-width:300px) {
 
-nav {
+nav  {
     flex-direction: column;
+    justify-content: space-between;
+
 }
 nav > a:first-child {
     border-radius: 1rem 1rem 1rem 1rem; 
@@ -62,108 +65,6 @@ nav > a:hover{
 }
 /* End of Nav bar  all HTML */
 
-/* start of index.html main page*/
-
-
-.containerH1 {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-}
-
-
-@media (max-width: 400px) {
-    .containerH1a {
-    display: flex;
-    flex-direction: column;
-    min-width: 200px;
-    margin-left: 15%;
-    }
-    .containerH1 {
-        display:flex;
-        flex-direction: column;
-        margin-left: 15%;
-    }
-    }
-
-.welcomemsg {
-    margin-left: 1cm;
-    margin-right: 1cm;
-}
-
-.galleryH1
-
-.container-flexH1 {
-    flex-direction: row;
-    flex-wrap: none;
-    display: flex;
-}
-.responsive-flexH1 {
-    padding: 0 8px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    column-gap:10px;
-    width: 24.99999%;
-    margin-top: 10%;
-    margin-bottom: 2%;
-    
-}
-
-div.galleryH1 {
-    border: 4px solid none;
-    display: flex;
-    flex-direction: row;
-}
-    div.galleryH1:hover {
-    border: 1px solid #777;
-}  
-div.galleryH1 img {
-    width: 100%;
-    height: auto;
-}
-
-    div.descH1 {
-    padding: 15px;
-    text-align: left;
-    text-wrap: nowrap;
-    flex-direction: row;
-}
-
-  * {
-    box-sizing: border-box;
-
-}
-
-@media only screen and (max-width: 1000px) {
-.responsive-flexH1 {
-display: flex;
-width: 49.99999%;
-margin: 6px 0;
-flex-direction: column;
-}
-div.descH1 {
-    padding: 15px;
-    text-align: left;
-    text-wrap: wrap;
-    flex-direction: column;
-}
-}
-
-@media only screen and (max-width: 400px) {
-.responsive-flexH1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-div.descH1 {
-    padding: 15px;
-    text-align: left;
-    text-wrap: wrap;
-    flex-direction: column;
-}
-}
-
 /* Start of Footer all HTML */
 
 footer   {
@@ -176,20 +77,54 @@ footer   {
     padding: 1px;
     background-color: darkgreen;
     color: white;
+    display: block;
 }
+
 /* End of Footer all HTML*/
 
-/* About styling*/
+
+/* Start of index.html main page*/
+
+.galleryH1 {
+    display: flex;
+    flex-direction: row;
+    text-wrap: wrap;
+    border: 4px solid none;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.imgviking {    
+    width: 300px;
+}  
+
+
+@media only screen and (max-width: 1000px) {
+
+    .galleryH1 {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        display: flex;
+    }    
+
+}
+
+
+ /* End of Index */
+
+
+/*Start of About styling*/
 .imgabout {
-    flex: ;
     margin-right: 20px;
 }
 
 .text-container {
     margin-left: 20px;
 }
+/*End of About styling*/
 
-/* Portfolio styling */
+/* Start of Portfolio styling */
 
 .container-flexP1 {
     flex-direction: row;
@@ -246,3 +181,74 @@ flex-direction: column;
     width: 100%;
 }
 }
+/* End of Portfolio styling */
+
+/* Start of Contact forms*/
+
+.container-flexC1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: darkkhaki;
+    
+    
+}
+label {
+    row-gap: 5px;
+    font-weight: bold;
+}
+input {
+    background-color: lightgreen;
+    
+}
+textarea {
+    background-color: lightgreen;
+    
+}
+button {
+    background-color: darkgreen;
+    color: white;
+    font-size: x-large;
+}
+@media only screen and (max-width: 1000px) {
+    .container-flexC1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+/* Response start */
+
+.r1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    
+}
+.r1 > .r1link .r1img {
+    align-items: center;
+    margin-left: auto;
+}
+
+.r1link {
+    color: black;
+    font-weight: bolder;
+    margin: auto;
+}
+
+@media (max-width: 1000px)  { 
+    .r1 {
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    .r1link {
+        color: black;
+        font-weight: bolder;
+    }
+}
+/* Response ends */
